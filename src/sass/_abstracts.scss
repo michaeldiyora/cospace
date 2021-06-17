@@ -1,0 +1,95 @@
+// ====================
+// Media Query Breakpoint
+// ====================
+/*
+0-600     : phone
+600-900   : tab -portrait
+900-1200  : tab -landscape
+1200-1800 = normal pc
+1800++++   big pc
+*/
+
+// ====================
+// breakpoint
+// ====================
+/*
+mobile
+tab-small
+tab-big
+big-pc
+----------------------
+1em = 16px
+1
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==mobile {
+    @media only screen and(max-width:37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tab-small {
+    @media only screen and(max-width:56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tab-big {
+    @media only screen and(max-width:75em) {
+      @content;
+    }
+  }
+  @if $breakpoint==big-pc {
+    @media only screen and(min-width:112.5em) {
+      @content;
+    }
+  }
+}
+
+// ====================
+// mixing
+// ====================
+
+@mixin flex($jc) {
+  display: flex;
+  align-items: center;
+  justify-content: $jc;
+}
+// ====================
+@mixin navLink($color) {
+  position: relative;
+  &:link,
+  &:visited {
+    display: inline-block;
+    padding: 1rem;
+    color: $color;
+    transition: all 0.2s;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 0.2rem;
+      width: 0;
+      background-color: $color-primary-dark;
+      transition: width 0.5s;
+    }
+  }
+
+  &:hover,
+  &:active {
+    color: $color-primary-dark;
+    &::before {
+      width: 100%;
+    }
+  }
+}
+// ====================
+// animation
+// ====================
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

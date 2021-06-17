@@ -1,0 +1,96 @@
+.footer {
+  grid-column: f-s/f-e;
+
+  background-color: $color-font-dark;
+  color: $color-font-light;
+  padding: 5rem 5%;
+
+  &__info {
+    text-align: center;
+    h1 {
+      color: $color-font-light;
+    }
+  }
+  &__contact {
+    text-align: center;
+    input {
+      width: 40%;
+      padding: 1.5rem;
+      outline: none;
+      border: 1px solid $color-font-light;
+      background-color: transparent;
+      color: $color-font-light;
+      @include respond(mobile) {
+        width: 80%;
+      }
+    }
+    button {
+      margin: 1rem;
+    }
+  }
+  &__navigation {
+    margin: 5rem 0;
+    @include flex(space-between);
+
+    @include respond(tab-small) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  &__logobox {
+    width: 20%;
+    @include respond(tab-small) {
+      width: 100%;
+    }
+  }
+  &__logo {
+    width: 100%;
+    @include respond(tab-small) {
+      width: 30%;
+    }
+  }
+  &__navbar {
+    width: 40%;
+
+    @include respond(tab-small) {
+      width: 60%;
+      margin: 5rem 0;
+    }
+    @include respond(mobile) {
+      width: 90%;
+    }
+  }
+  &__nav {
+    @include flex(space-between);
+  }
+  &__link {
+    @include navLink($color-font-light);
+  }
+  &__social {
+    width: 20%;
+    @include flex(space-between);
+    ion-icon {
+      font-size: 4rem;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        color: $color-primary-dark;
+        transform: scale(1.2);
+      }
+    }
+    @include respond(tab-small) {
+      width: 30%;
+    }
+    @include respond(mobile) {
+      width: 50%;
+    }
+  }
+  &__copyright {
+    text-align: center;
+  }
+}
+
+.subscribe-msg {
+  color: green;
+  display: none;
+}

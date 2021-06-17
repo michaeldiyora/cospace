@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoSpace</title>
+    <!-------------------->
+    <!----- favicon ----->
+    <!-------------------->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <!-------------------->
+    <!----- font ----->
+    <!-------------------->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-------------------->
+    <!----- css-vendor onscroll animation----->
+    <!-------------------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-------------------->
+    <!----- css ----->
+    <!-------------------->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-------------------->
+    <!----- layout ----->
+    <!-------------------->
+
+    <div class="layout">
+      <!-------------------->
+      <!----- navigation ----->
+      <!-------------------->
+      <div class="navigation">
+        <div class="navigation__logobox">
+          <a href="./index.html" class="logo-home"
+            ><img class="navigation__logo" src="./images/logo-black.png" alt=""
+          /></a>
+        </div>
+        <input class="navigation__checkbox" type="checkbox" id="nav-toggle" />
+        <label class="navigation__button" for="nav-toggle">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__navbar">
+          <ul class="navigation__nav">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation-explore">Home</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-------------------->
+      <!----- header ----->
+      <!-------------------->
+      <header id="home" class="header">
+        <div
+          class="header__info"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-offset="0"
+        >
+          <div class="header__info__social">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+          </div>
+          <div class="header__info__heading">
+            <img
+              class="header__info__heading__bg-img"
+              src="./images/bg.png"
+              alt=""
+            />
+            <span class="heading-main"> Spaces </span>
+            <span class="heading-sub">
+              Discover our space that defines a new dimension of luxury.
+            </span>
+          </div>
+        </div>
+        <div class="header__slider">
+          <div class="header__slide">
+            <picture>
+              <source srcset="./images/slide5.webp" type="image/webp" />
+              <source srcset="./images/slide5.jpg" type="image/jpeg" />
+              <img src="./images/slide5.jpg" alt="" />
+            </picture>
+          </div>
+
+          <div class="header__rating">
+            <span class="header__rating__star">4.8</span>
+            <span class="header__rating__info">
+              <h6>Rating based on 500+ reviews</h6>
+              <div class="">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <!------------------ -->
+      <!----- spaces ----->
+      <!-------------------->
+      <section id="space" class="space">
+        <div class="space__info" data-aos="fade-up">
+          <h2>
+            Spaces that <br />
+            you'd love
+          </h2>
+          <h5>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem placeat, et laudantium atque eum dolore blanditiis.
+          </h5>
+        </div>
+
+        <div class="space__explore" data-aos="fade-up">
+          <div class="space__explore__img">
+            <div class="space__hover">
+              <h3>Spaces that you'd love</h3>
+              <h4>Starting from Rs.1000</h4>
+            </div>
+            <picture>
+              <source srcset="./images/space0.webp" type="image/webp" />
+              <source srcset="./images/space0.jpg" type="image/jpeg" />
+              <img src="./images/space0.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="space__explore__img">
+            <div class="space__hover">
+              <h3>Spaces that you'd love</h3>
+              <h4>Starting from Rs.1000</h4>
+            </div>
+            <picture>
+              <source srcset="./images/space1.webp" type="image/webp" />
+              <source srcset="./images/space1.jpg" type="image/jpeg" />
+              <img src="./images/space1.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="space__explore__img">
+            <div class="space__hover">
+              <h3>Spaces that you'd love</h3>
+              <h4>Starting from Rs.1000</h4>
+            </div>
+            <picture>
+              <source srcset="./images/space2.webp" type="image/webp" />
+              <source srcset="./images/space2.jpg" type="image/jpeg" />
+              <img src="./images/space2.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="space__explore__img">
+            <div class="space__hover">
+              <h3>Spaces that you'd love</h3>
+              <h4>Starting from Rs.1000</h4>
+            </div>
+            <picture>
+              <source srcset="./images/space3.webp" type="image/webp" />
+              <source srcset="./images/space3.jpg" type="image/jpeg" />
+              <img src="./images/space3.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="space__explore__img">
+            <div class="space__hover">
+              <h3>Spaces that you'd love</h3>
+              <h4>Starting from Rs.1000</h4>
+            </div>
+            <picture>
+              <source srcset="./images/space4.webp" type="image/webp" />
+              <source srcset="./images/space4.jpg" type="image/jpeg" />
+              <img src="./images/space4.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="space__explore__img">
+            <div class="space__hover">
+              <h3>Spaces that you'd love</h3>
+              <h4>Starting from Rs.1000</h4>
+            </div>
+            <picture>
+              <source srcset="./images/space5.webp" type="image/webp" />
+              <source srcset="./images/space5.jpg" type="image/jpeg" />
+              <img src="./images/space5.jpg" alt="" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!-------------------->
+      <!----- footer ----->
+      <!-------------------->
+      <footer id="footer" class="footer">
+        <div class="footer__info" data-aos="fade-up">
+          <h4>Our Insights</h4>
+          <h1>Subscribe our newsletter to get updates</h1>
+        </div>
+        <div class="footer__contact" data-aos="fade-up">
+          <form id="form-subscribe" class="form-control">
+            <input
+              class="subscribe__email"
+              name="email"
+              placeholder="Enter your email"
+              autocomplete="off"
+            />
+            <small style="display: block">error</small>
+            <h5 class="subscribe-msg">Thank you for getting in touch!</h5>
+            <button class="btnb subscribe__btn" type="submit">Subscribe</button
+            ><br />
+          </form>
+        </div>
+        <div class="footer__navigation">
+          <div class="footer__logobox">
+            <img class="footer__logo" src="./images/logo-white.png" alt="" />
+          </div>
+          <nav class="footer__navbar">
+            <ul class="footer__nav">
+              <li class="footer__item">
+                <a href="./index.html" class="footer__link">Home</a>
+              </li>
+              <li class="footer__item">
+                <a href="./index.html" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="./index.html" class="footer__link">Spaces</a>
+              </li>
+              <li class="footer__item">
+                <a href="./index.html" class="footer__link">Feature</a>
+              </li>
+              <li class="footer__item">
+                <a href="./index.html" class="footer__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__social">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <h5>
+            Copyright &copy;
+            <span> </span>
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            <span> </span>
+            Michael Diyora All Rights Reserved
+          </h5>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <!-------------------->
+  <!----- icon ----->
+  <!-------------------->
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+  <!-------------------->
+  <!----- js-vendor onscroll animation ----->
+  <!-------------------->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      offset: 100,
+      duration: 1000,
+      disable: 'mobile',
+    });
+    window.addEventListener('scroll', function () {
+      const stickyNav = document.querySelector('.navigation');
+      stickyNav.classList.toggle('sticky', window.scrollY > 0);
+    });
+  </script>
+</html>

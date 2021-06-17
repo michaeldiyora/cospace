@@ -1,0 +1,63 @@
+.feature {
+  grid-column: f-s/f-e;
+  background-color: $color-bg-light;
+  padding: 10rem 5%;
+
+  &__heading {
+    @include flex(space-between);
+    h1 {
+      width: 45%;
+      @include respond(tab-small) {
+        width: 70%;
+      }
+      @include respond(mobile) {
+        width: 100%;
+      }
+    }
+    h5 {
+      width: 35%;
+      @include respond(tab-small) {
+        width: 70%;
+      }
+      @include respond(mobile) {
+        width: 100%;
+      }
+    }
+    @include respond(tab-small) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__info {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(43rem, 1fr));
+    justify-content: center;
+    grid-gap: 5rem;
+    @include respond(tab-small) {
+      padding: 0 5rem;
+    }
+    @include respond(mobile) {
+      padding: 0;
+    }
+    &__box {
+      box-shadow: 0rem 1.2rem 2rem rgba($color-black, 0.1);
+      padding: 4rem;
+      display: flex;
+      @include respond(mobile) {
+        padding: 2rem;
+      }
+    }
+
+    &__icon {
+      margin-right: 2rem;
+      ion-icon {
+        border-radius: 50px;
+        padding: 0.6rem;
+        background-color: $color-primary-dark;
+        color: $color-bg-light;
+        font-size: 2rem;
+      }
+    }
+  }
+}

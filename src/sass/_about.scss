@@ -1,0 +1,40 @@
+.about {
+  grid-column: f-s/ f-e;
+
+  background-color: $color-bg-light;
+  padding: 10rem 5%;
+  @include flex(space-between);
+
+  @include respond(tab-small) {
+    flex-direction: column;
+  }
+
+  &__img {
+    position: relative;
+    width: 55%;
+    z-index: 1;
+    img {
+      width: 100%;
+    }
+    @include respond(tab-small) {
+      width: 100%;
+    }
+  }
+  &__info {
+    width: 35%;
+
+    @include respond(tab-small) {
+      margin-top: 5rem;
+      width: 100%;
+    }
+  }
+  &__bg-img {
+    width: 50% !important;
+    position: absolute;
+    left: -12rem;
+    bottom: -12rem;
+    opacity: 0.2;
+    z-index: -1;
+    animation: spin 20s linear infinite;
+  }
+}

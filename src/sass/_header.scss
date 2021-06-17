@@ -1,0 +1,129 @@
+.header {
+  grid-column: f-s/f-e;
+  background-color: $color-bg-dark;
+  height: 65rem;
+  padding-left: 5rem;
+  @include flex(space-between);
+
+  @include respond(tab-small) {
+    flex-direction: column;
+    padding: 10rem;
+    justify-content: center;
+  }
+  @include respond(mobile) {
+    padding: 10rem 3rem;
+  }
+  &__info {
+    width: 45%;
+    @include flex(space-between);
+    @include respond(tab-small) {
+      width: 100%;
+    }
+
+    &__social {
+      width: 20%;
+      z-index: 2;
+      ion-icon {
+        color: $color-primary-dark;
+        display: block;
+        font-size: 3rem;
+        margin-bottom: 5rem;
+        cursor: pointer;
+        transition: transform 0.3s;
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+      @include respond(mobile) {
+        display: none;
+      }
+    }
+    &__heading {
+      width: 80%;
+      z-index: 1;
+      color: $color-font-dark;
+      position: relative;
+      &__bg-img {
+        position: absolute;
+        top: -5rem;
+        left: -10rem;
+        z-index: -1;
+        opacity: 0.2;
+      }
+      @include respond(mobile) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__slider {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    &__btn-left {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+    }
+    &__btn-right {
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+    }
+    @include respond(tab-small) {
+      display: none;
+    }
+  }
+  &__slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: transform 1s;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__rating {
+    background-color: $color-bg-dark;
+    color: $color-font-dark;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 2rem;
+    left: 15%;
+    right: 15%;
+    transition: transform 0.5s, opacity 0.7s;
+    ion-icon {
+      font-size: 2.5rem;
+      color: $color-primary-dark;
+    }
+    &__star {
+      padding: 1rem 2rem;
+      margin-right: 2rem;
+      font-weight: 600;
+      font-size: 4rem;
+      border-right: 1px solid $color-font-mid;
+    }
+    &__info {
+      padding: 1rem 2rem;
+    }
+    h6 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// helper class
+.rating_animation {
+  transform: translateY(10rem);
+  opacity: 0;
+}
